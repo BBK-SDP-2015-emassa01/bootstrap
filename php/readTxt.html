@@ -1,0 +1,21 @@
+
+	<html>
+
+	<head>
+	<title>Reading from text files</title>
+	</head>
+	<body>
+
+	<?php
+
+	$f = fopen("webdictionary.txt", "r");
+
+	// Read line from the text file and write the contents to the client
+	echo fgets($f); 
+
+	fclose($f);
+
+	?>
+
+	</body>
+	</html>
